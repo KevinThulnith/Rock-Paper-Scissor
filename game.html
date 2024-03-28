@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo2.png" type="image/x-icon" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Rock Paper Scissor</h1>
+    </nav>
+    <div class="box">
+      <div class="wndw1">
+        <h1>Number of Rounds :</h1>
+        <button id="4" class="round">4 Rounds</button>
+        <button id="8" class="round">8 Rounds</button>
+        <button id="12" class="round">12 Rounds</button>
+        <h1>Select Player :</h1>
+        <div class="sss">
+          <button id="a" class="player">Player A</button>
+          <button id="b" class="player">Player B</button>
+        </div>
+      </div>
+      <div class="wndw2">
+        <div class="pad">
+          <div class="icon" id="0">
+            <img src="hand-back-fist-solid.svg" />
+          </div>
+          <div class="icon" id="1">
+            <img src="hand-solid.svg" />
+          </div>
+          <div class="icon" id="2">
+            <img src="hand-scissors-solid.svg" />
+          </div>
+        </div>
+        <div class="pad1">
+          <div class="wid" id="tile1"></div>
+          <div class="wid" id="tile2"></div>
+        </div>
+        <div class="score">
+          <h3>Score :</h3>
+          <div class="board" id="pa">
+            Player A
+            <span id="playerA">0</span>
+          </div>
+          <div class="board" id="pb">
+            Player B
+            <span id="playerB">0</span>
+          </div>
+          <label>
+            Rounds Left :
+            <div id="rnd">0</div>
+          </label>
+        </div>
+        <div class="dot" onclick="dot()"></div>
+      </div>
+      <div id="wndw3" class="pop">
+        <header class="pop">You Win!</header>
+        <header class="pop">You Lost!</header>
+        <header class="pop">Tie Game!</header>
+        <button onclick="reset()">Restart</button>
+        <button onclick="menu()">Menu</button>
+      </div>
+      <div id="wndw4" class="pop" onclick="norm()">
+        <header class="pop">Player A</header>
+        <header class="pop">Player B</header>
+        <header class="pop">Tie Round</header>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
